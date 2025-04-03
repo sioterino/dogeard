@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  margin-inline: 0px;
+  padding-inline: 0px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  box-sizing: border-box;
+
+  background-color: lightgray;
+}
+
+main {
+  max-width: 1500px;
+  height: 100vh;
+
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main,
+main * {
+  background-color: white;
+}
