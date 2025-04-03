@@ -12,17 +12,47 @@
 
 main {
   max-width: 1500px;
-  height: 100vh;
+  min-height: 100vh;
 
   margin-inline: auto;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3rem;
+
+  background-color: white;
 }
 
-main,
-main * {
-  background-color: white;
+.book {
+    padding: 1rem;
+    width: fit-content;
+
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+    border-radius: 1rem;
+    background-color: white;
+    border: 1px dotted lightgray;
+}
+
+.book * {
+    width: 200px;
+    background-color: white;
+}
+
+.book-cover {
+    border-radius: .5rem;
+    object-fit: cover;
+    height: 270px;
+}
+
+.book-title {
+    text-transform: capitalize;
 }
